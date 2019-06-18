@@ -1,0 +1,212 @@
+/*=======================
+  minibbs
+=======================*/
+
+.required {
+	background-color: $color-alert;
+	color: #fff;
+	font-size: 90%;
+	padding: 2px;
+	margin-left: 10px;
+}
+
+.error {
+	font-size: 90%;
+	color: $color-alert;
+}
+
+
+
+
+.head {
+	background: $accent1;
+	color: #fff;
+	padding: 1.5rem;
+
+	&-inner {
+		max-width: 980px;
+		padding: 0 4vw;
+		margin: 0 auto;
+	}
+
+	&-tit {
+		font-family: $font-webfont;
+		font-size: 2.5rem;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+
+.content {
+	padding: 20px;
+	background: $base;
+	margin: 0 auto;
+	font-size: 1.6rem;
+
+	&-inner {
+		max-width: 780px;
+		padding: 2rem 2vw;
+		margin: 0 auto;
+		background: #fff;
+	}
+}
+
+
+.form {
+	margin-bottom: 4rem;
+
+	&-dl {
+		margin-bottom: 1rem;
+	}
+
+	&-dt {
+		border-left: 5px solid $accent2;
+		padding-left: 5px;
+		margin-bottom: 5px;
+	}
+
+	&-dd {
+		margin-bottom: 0.5em;
+		textarea {
+			width: 100%;
+			background: #f5f5f5;
+			border: none;
+			padding: 1em;
+		}
+	}
+
+	&-btn {
+		margin-top: 1em;
+		text-align: center;
+		input {
+			width: 240px;
+			padding: 1rem 2rem;
+			border: 2px solid $accent1;
+			background: $accent1;
+			color: white;
+			font-weight: bold;
+			&:hover {
+				background: #fff;
+				color: $accent1;
+				transition: .3s;
+			}
+		}
+	}
+}
+
+
+.post {
+	clear: both;
+	border-top: 1px solid #ccc;
+	padding: 1.5rem 0;
+	display: flex;
+
+	&._show {
+		display: block;
+	}
+
+	&-pic {
+		width: 70px;
+		margin-right: 1.5rem;
+		img {
+			width: 100%;
+			vertical-align: bottom;
+		}
+	}
+
+	&-body {
+		width: calc(100% - 85px);
+	}
+
+	&-name{
+		font-weight: bold;
+	}
+
+	&-msg {
+		font-size: 1.5rem;
+		padding: 1rem 0;
+		a { color: #333; }
+	}
+
+	&-re {
+		color: $accent2!important;
+	}
+
+	&-day {
+		font-size: 1.4rem;
+		color: #999;
+	}
+
+	&-delete {
+		color: #f33;
+	}
+
+	&-reply {
+		font-size: 1.5rem;
+		color: #999;
+		&._res {
+			margin-bottom: 1em;
+		}
+	}
+
+	&-hr {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+}
+
+
+.lead {
+	margin-bottom: 1em;
+
+	&-text {
+		font-size: 1.5rem;
+	}
+}
+
+
+.user {
+
+	&-pic {
+		width: 75%;
+		max-width: 180px;
+		margin: 0 auto;
+		text-align: center;
+		img {
+			width: 100%;
+			vertical-align: bottom;
+		}
+	}
+
+	&-name {
+		margin-bottom: .5em;
+	}
+
+	&-email {
+		margin-bottom: .5em;
+	}
+
+	&-edit {
+		color: $color-link;
+	}
+}
+
+
+.pagination {
+	margin: 2rem auto;
+
+	&-item {
+		a {
+			color: $accent1!important;
+		}
+
+		&.active {
+			span {
+				background: $accent1!important;
+				border-color: $accent1!important;
+			}
+		}
+	}
+}

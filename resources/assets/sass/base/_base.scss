@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*======================
+  base
+======================*/
+
+html { font-size: 62.5%; /* 1rem = 10px */}
+
+body {
+  color: $color-font-base;
+  font-family: $font-base;
+  line-height: 1.5;
+  font-size: $fz-sp;
+  font-weight: 500; /* Windows用「游ゴシック体」 */
+  letter-spacing: .01em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  // IE横スクロール対策
+  overflow-x: hidden;
+  @include mq(m) {
+    font-size: $fz-pc;
+  }
+  // メニューオープン時に背景固定
+  &.backlayer {
+		overflow: hidden;
+	}
+}
+
+.sp-none {
+  @include mq(m) {
+    display: none;
+  }
+}
+
+.pc-none {
+  display: none;
+  @include mq(m) {
+    display: block;
+  }
+}
+
+.fw-bold {
+  font-weight: bold;
+}

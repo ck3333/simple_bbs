@@ -1,0 +1,423 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:400,700);@charset "UTF-8";
+
+/*======================
+  web-font
+======================*/
+
+/*=====================================
+  base
+=====================================*/
+
+/*======================
+  reset
+======================*/
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+label,
+table,
+tbody,
+tr,
+th,
+td,
+figure {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+tr,
+th,
+td {
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/*======================
+  base
+======================*/
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+body {
+  color: #333;
+  font-family: "\6E38\30B4\30B7\30C3\30AF", "Yu Gothic", YuGothic, "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", "Hiragino Kaku Gothic ProN", "\30E1\30A4\30EA\30AA", Meiryo, sans-serif;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 500;
+  /* Windows用「游ゴシック体」 */
+  letter-spacing: .01em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+body.backlayer {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  .sp-none {
+    display: none;
+  }
+}
+
+.pc-none {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .pc-none {
+    display: block;
+  }
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/*=====================================
+  MODULE
+=====================================*/
+
+/*=======================
+  header
+=======================*/
+
+.header {
+  background: #248ea9;
+}
+
+.header-inner {
+  max-width: 980px;
+  padding: 2rem 4vw;
+  margin: 0 auto;
+}
+
+.header-item {
+  display: inline-block;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 1em;
+}
+
+.header-item a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/*=======================
+  footer
+=======================*/
+
+.footer {
+  background: #248ea9;
+}
+
+.footer-inner {
+  max-width: 980px;
+  padding: 1rem 4vw;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+/*=====================================
+  PLUGINS
+=====================================*/
+
+/*=====================================
+  PAGE
+=====================================*/
+
+/*=======================
+  minibbs
+=======================*/
+
+.required {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 90%;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.error {
+  font-size: 90%;
+  color: #ff0000;
+}
+
+.head {
+  background: #28c3d4;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.head-inner {
+  max-width: 980px;
+  padding: 0 4vw;
+  margin: 0 auto;
+}
+
+.head-tit {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  background: #fafdcb;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.content-inner {
+  max-width: 780px;
+  padding: 2rem 2vw;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.form {
+  margin-bottom: 4rem;
+}
+
+.form-dl {
+  margin-bottom: 1rem;
+}
+
+.form-dt {
+  border-left: 5px solid #248ea9;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.form-dd {
+  margin-bottom: 0.5em;
+}
+
+.form-dd textarea {
+  width: 100%;
+  background: #f5f5f5;
+  border: none;
+  padding: 1em;
+}
+
+.form-btn {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.form-btn input {
+  width: 240px;
+  padding: 1rem 2rem;
+  border: 2px solid #28c3d4;
+  background: #28c3d4;
+  color: white;
+  font-weight: bold;
+}
+
+.form-btn input:hover {
+  background: #fff;
+  color: #28c3d4;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.post {
+  clear: both;
+  border-top: 1px solid #ccc;
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post._show {
+  display: block;
+}
+
+.post-pic {
+  width: 70px;
+  margin-right: 1.5rem;
+}
+
+.post-pic img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.post-body {
+  width: calc(100% - 85px);
+}
+
+.post-name {
+  font-weight: bold;
+}
+
+.post-msg {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.post-msg a {
+  color: #333;
+}
+
+.post-re {
+  color: #248ea9 !important;
+}
+
+.post-day {
+  font-size: 1.4rem;
+  color: #999;
+}
+
+.post-delete {
+  color: #f33;
+}
+
+.post-reply {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.post-reply._res {
+  margin-bottom: 1em;
+}
+
+.post-hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  margin-bottom: 1em;
+}
+
+.lead-text {
+  font-size: 1.5rem;
+}
+
+.user-pic {
+  width: 75%;
+  max-width: 180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user-pic img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.user-name {
+  margin-bottom: .5em;
+}
+
+.user-email {
+  margin-bottom: .5em;
+}
+
+.user-edit {
+  color: #009dd1;
+}
+
+.pagination {
+  margin: 2rem auto;
+}
+
+.pagination-item a {
+  color: #28c3d4 !important;
+}
+
+.pagination-item.active span {
+  background: #28c3d4 !important;
+  border-color: #28c3d4 !important;
+}
+

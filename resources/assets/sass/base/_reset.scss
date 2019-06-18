@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*======================
+  reset
+======================*/
+
+html, body, div, span, iframe, h1, h2, h3, h4, p, a, img, dl, dt, dd, ol, ul, li, label, table, tbody, tr, th, td, figure { padding: 0; margin: 0; border: 0; font-size: 100%; vertical-align: baseline; box-sizing: border-box; }
+
+article, aside, figure, footer, header, nav, section { display: block; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+a { text-decoration: none; color: #000; }
+a:hover {
+  // opacity: .7;
+  transition: .3s ease-in;
+  // text-decoration: none;
+}
+
+li { list-style: none; }
+
+img { max-width: 100%; height: auto; }
+video { max-width: 100%; height: auto; }
+
+table { border-collapse: collapse; border-spacing: 0; table-layout: fixed; }
+tr, th, td { vertical-align: middle; }
+input[type="submit"]{ -webkit-appearance: none; border-radius: 0; }
