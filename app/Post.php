@@ -13,7 +13,7 @@ class Post extends Model
     );
 
 
-    // リレーション
+    // リレーションaa
     public function user()
     {
         return $this->belongsTo('App\User', 'member_id');
